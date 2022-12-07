@@ -18,11 +18,10 @@ var UCs = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N",
 var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
 var specialChars = ["~", "!", "@", "#", "$", "%", "^", "&", "*", "?", "!", "."];
 
-// Getting right into it, I, with help from my tutor Andrew, formulated a single function to get all the password options. I had previously collected them in separate functions.
-// The first user input is how many characters they want their password to be:
+// Getting right into it, I formulated a single function to get all the password options. 
 function getPasswordOptions() {
   passwordLength = parseInt(window.prompt("First, choose your password length (8-128 characters)"));
-  if (Number.isNaN(passwordLength)) {
+    if (Number.isNaN(passwordLength)) {
     alert("Password length must be a number silly goose!")
     return null;
   }
@@ -30,12 +29,13 @@ function getPasswordOptions() {
     alert("Password length must be between 8-128 characters.")
     return null;
   }
-// The following password options were collected as ok-yes or cancel-no as follows:
+// The other password options were collected as follows. 
   passwordLC = confirm("Click OK if you would like lower case letters included in your password")
   passwordUC = confirm("Click OK if you would like upper case letters included in your password")
   passwordNum = confirm("Click OK if you would like numbers included in your password")
   passwordSpecialChar = confirm("Click OK if you would like special characters included in password")
-// Wonderful, but what if they don't select *any*? We have to make sure they select at least 1 type of character:
+// Wonderful, but if the user does not select ANY of the options, there will be nothing to make the pass with! 
+    // We have to make sure they select at least 1 type of character:
   if (
     passwordLC === false && 
     passwordUC === false &&
@@ -44,7 +44,7 @@ function getPasswordOptions() {
       alert("Must select at least 1 character type!!")
       return null;
     }
-// So, if they select none, the function returns null i.e. stops running, and the user must restart.
+// So, if they select none, this is an error so the function stops running. The user must restart.
 // Once we have the user selections, we can store the password options as an object:
   var passwordOptions = {
     length: passwordLength,
@@ -56,7 +56,7 @@ function getPasswordOptions() {
   return passwordOptions;
 }
 
-// I wrote up a randomization function to use when concatenating the password options:
+// I wrote up a randomization function to use when concatenating password options.
 function randomize(arr) {
   var randomIndex = Math.floor(Math.random()*arr.length)
   var randomElement = arr[randomIndex]
