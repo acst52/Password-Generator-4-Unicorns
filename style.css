@@ -30,6 +30,7 @@ header {
   color: hsl(206, 17%, 28%);
 }
 
+/* Header glow effect start */
 .glow {
   font-size: 25px;
   color: #fff;
@@ -47,6 +48,7 @@ header {
     text-shadow: 0 0 20px #fff, 0 0 30px #fb8fa6, 0 0 40px #ff2d7d, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
   }
 }
+/* Header glow effect end */
 
 .card {
   background-color: hsl(0, 0%, 100%);
@@ -92,7 +94,7 @@ header {
 
 .btn {
   border: none;
-  background-color: hsl(360, 91%, 36%);
+  background-color: rgb(103, 213, 237);
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
