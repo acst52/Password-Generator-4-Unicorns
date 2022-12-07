@@ -39,7 +39,7 @@ THEN the password is either displayed in an alert or written to the page
 
 ![Password-Generator-Mockup](https://user-images.githubusercontent.com/116177485/205467125-55c3cb5e-7061-4de6-9b4d-b0ec0e339352.png)
 
-![My-Project](URL)
+![Pass-Gen-Actual-Snip](https://user-images.githubusercontent.com/116177485/206270557-7ebf70ca-468b-4249-a1eb-e6c1cf669146.png)
 
 --------------------------------------------------------------------------------
 
