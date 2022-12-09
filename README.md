@@ -1,6 +1,6 @@
 ### 03 - Password Generator Using JavaScript: Password Generator 4 Unicorns
 
-In this coding bootcamp challenge we were asked to create a password generator based on user input using only javascript. In my password generator, which you can find here, you will notice that users can select how long they want their password to be (8-128 characters), whether they want to include lowercase, uppercase letters, numbers and/or special characters. The password will then be generated in the box for the user to grab. Note that every character type that the user selects is guaranteed to be included in their password.
+In this coding bootcamp challenge we were asked to create a password generator based on user input using only javascript. In my password generator, which you can find ![here](https://acst52.github.io/Password-Generator-4-Unicorns/), you will notice that users can select how long they want their password to be (8-128 characters), whether they want to include lowercase, uppercase letters, numbers and/or special characters. The password will then be generated in the box for the user to grab. Note that every character type that the user selects is guaranteed to be included in their password.
 
 #### Acceptance Criteria
 
