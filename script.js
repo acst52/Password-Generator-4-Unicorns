@@ -1,6 +1,6 @@
 // Hello and welcome to my 03-challenge-password-generator JavaScript code!
 
-// First things first I got the button to 'work', i.e. start the cascade of functions below 
+// First things first I got the button to start the cascade of functions below 
 const element = document.getElementById("generate");
 element.addEventListener("click", writePassword);
 
@@ -10,7 +10,6 @@ var passwordLC;
 var passwordUC;
 var passwordNum;
 var passwordSpecialChar;
-var passwordGen = '';
 
 // I also put all possible password character options in arrays to use later
 var LCs = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
@@ -21,7 +20,7 @@ var specialChars = ["~", "!", "@", "#", "$", "%", "^", "&", "*", "?", "!", "."];
 // Getting right into it, I formulated a single function to get all the password options. 
 function getPasswordOptions() {
   passwordLength = parseInt(window.prompt("First, choose your password length (8-128 characters)"));
-    if (Number.isNaN(passwordLength)) {
+  if (Number.isNaN(passwordLength)) {
     alert("Password length must be a number silly goose!")
     return null;
   }
@@ -35,7 +34,7 @@ function getPasswordOptions() {
   passwordNum = confirm("Click OK if you would like numbers included in your password")
   passwordSpecialChar = confirm("Click OK if you would like special characters included in password")
 // Wonderful, but if the user does not select ANY of the options, there will be nothing to make the pass with! 
-    // We have to make sure they select at least 1 type of character:
+// We have to make sure they select at least 1 type of character:
   if (
     passwordLC === false && 
     passwordUC === false &&
@@ -104,6 +103,5 @@ var generateBtn = document.querySelector("#generate");
 function writePassword() {
   var password = makePassword();
   var passwordText = document.querySelector("#password");
-// et voila!
   passwordText.value = password;
 }
