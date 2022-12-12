@@ -67,6 +67,10 @@ function randomize(arr) {
 // 2. once all guaranteedChars were added, I joined all the array elements to make a single password string
 function makePassword() {
   var options = getPasswordOptions()
+// Thank you Charanvir for the following check, which removed the errors when the user did not satisfy criteria!
+    if (options === null) {
+    return "Password criteria not met - please restart!"
+    }
   var result = []
   var possibleChars = []
   var guaranteedChars = []
